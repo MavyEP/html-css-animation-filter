@@ -1,0 +1,183 @@
+.ex-1-square {
+    transition: background-color 2s;
+}
+
+.ex-1-square:hover {
+    background-color: red
+}
+
+
+.ex-2-square {
+    transition: width 4s;
+}
+
+.ex-2-square:active {
+    width: 100%;
+}
+
+
+
+.ex-3-square {
+    transition: border-radius 2s linear;
+}
+
+.ex-3-square:hover {
+    border-radius: 50%;
+}
+
+
+
+.ex-4-square {
+    transition: opacity 2s;
+}
+
+.ex-4-square:hover {
+    opacity: 0;
+}
+
+
+
+.ex-5-square {
+    transition: transform 2s ;
+}
+
+.ex-5-square:hover {
+    transform: scale(2,2);
+}
+
+.ex-5-square:active {
+    transform: scale(0.5,0.5);
+}
+
+
+
+.ex-6-img {
+    transition: filter 2s;
+}
+
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
+
+
+
+.ex-7-img {
+    transition: filter 4s;
+}
+
+.ex-7-img:hover {
+    filter: grayscale(1) sepia(0.5);
+}
+
+
+
+.ex-8-img {
+    transition: filter 4s,border-radius 2s;
+}
+
+.ex-8-img:hover {
+    filter: saturate(0.4) sepia(0.8);
+    border-radius: 20px;
+}
+
+
+
+.ex-9-img {
+    transition: filter 4s,border-radius 4s, transform 4s;
+}
+
+.ex-9-img:hover {
+    filter: saturate(0.4) sepia(0.8);
+    border-radius: 20px;
+    transform: scale(1.5,1.5);
+}
+
+
+.ex-10-icon {
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(-180deg);}
+    100% {transform: rotate(-360deg);}
+}
+
+
+.ex-11-icon:hover {
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    80% {transform: rotate(270deg);}
+    100% {transform: rotate(0deg);}
+}
+
+
+
+.ex-12-bottom-white {
+    animation-name: rotatebuttom;
+    animation-duration:2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotatebuttom {
+    0% {right: 20%;}
+    50% {right: calc(100% - 60px);}
+    100% {right: 20%;}
+}
+
+.ex-12-top-white {
+    animation-name: rotatetop;
+    animation-duration:2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotatetop {
+    0% {left: 10%;}
+    50% {left: calc(100% - 60px);}
+    100% {left: 10%;}
+}
+
+
+
+.ex-13-top-white {
+    animation-name: movetop;
+    animation-duration:2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movetop {
+    0% {top: -10px; left: 10%;}
+    30%{top: -10px; left: calc(100% - 30px);}
+    50%{top: 100%;  left: calc(100% - 30px);}
+    70%{top: 100%;  left: -5%;}
+    90%{top: -10px; left:-5%;}
+    100%{top: -10px; left:10%;}
+}
+
+.ex-13-bottom-white {
+    animation-name: movebottom;
+    animation-duration:2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movebottom {
+    0% {bottom: -10px; right: 10%;}
+    30%{bottom: -10px; right: calc(100% - 50px);}
+    50%{bottom: 100%;  right: calc(100% - 50px);}
+    70%{bottom: 100%;  right: -5%;}
+    90%{bottom: -10px; right:-5%;}
+    100%{bottom: -10px; right:10%;}
+}
